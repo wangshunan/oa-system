@@ -19,6 +19,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="file-copy" path="$PROJECT_DIR$/../apache-tomcat-9.0.39/lib/servlet-api.jar" />
           <element id="library" level="project" name="Maven: org.freemarker:freemarker-gae:2.3.30" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.75" />
         </element>
       </element>
     </root>
