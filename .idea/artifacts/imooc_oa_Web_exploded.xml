@@ -20,6 +20,7 @@
           <element id="file-copy" path="$PROJECT_DIR$/../apache-tomcat-9.0.39/lib/servlet-api.jar" />
           <element id="library" level="project" name="Maven: org.freemarker:freemarker-gae:2.3.30" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.75" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.15" />
         </element>
       </element>
     </root>

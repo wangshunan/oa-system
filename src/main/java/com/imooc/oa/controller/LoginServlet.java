@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -35,8 +36,11 @@ public class LoginServlet extends HttpServlet {
 
         try {
             User user = userService.checkLogin(username, password);
+            HttpSession session = req.getSession();
+            session.setAttribute("login_user", user);
             result.put("code", "0");
             result.put("message", "success");
+            result.put("redirect_url", "./index");
         } catch (BussinessException ex) {
             logger.error(ex.getMessage(), ex);
             result.put("code", ex.getCode());
